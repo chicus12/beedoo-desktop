@@ -8,6 +8,7 @@ const mb = menubar({
   index: `file://${normalize(join(__dirname, '../window/index.html'))}`,
   width: 800,
   height: 400,
+  frame: false,
 });
 
 mb.on('ready', () => {
