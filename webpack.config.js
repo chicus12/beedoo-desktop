@@ -24,6 +24,13 @@ module.exports = {
         ],
         exclude: /node_modules/,
       },
+      {
+        test: /\.woff(2)?(\?[a-z0-9]+)?$/,
+        loader: 'url-loader?limit=10000&mimetype=application/font-woff',
+      }, {
+        test: /\.(ttf|eot|svg)(\?[a-z0-9]+)?$/,
+        loader: 'file-loader',
+      },
       { test: /\.css$/, loader: 'style-loader!css-loader' },
       { test: /\.sass$/, loader: 'style-loader!css-loader!sass-loader' },
       {

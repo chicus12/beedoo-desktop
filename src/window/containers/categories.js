@@ -36,11 +36,11 @@ class Categories extends React.Component {
             <input type="submit" value="Sign In" />
           </div>
         </Form>
-        <div>
-          <span>
-            With love by @chicus12, @foxdie, @eslid
+        <footer>
+          <span className="contributors">
+            made with <i className="icon-heart" /> by @chicus12, @foxdie, @eslid
           </span>
-        </div>
+        </footer>
       </section>
     )
   }
