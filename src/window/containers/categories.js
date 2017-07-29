@@ -6,7 +6,7 @@ import {
   Button,
   Form,
   FormControl,
-  FormGroup
+  FormGroup,
 } from 'react-bootstrap'
 
 import * as CategoryActions from '../actions/categories'
@@ -40,24 +40,26 @@ class Categories extends React.Component {
           </div>
 
           <div className="submit">
-            <input type="submit" value="Sign In" />
+            <input type="submit" className="btn red" value="Sign In" />
           </div>
         </Form>
 
-        <span className="not-member">
-          Not a member yet? <a href="#">SignUp Now</a>
-        </span>
+        <div className="box white">
+          <span className="not-member">
+            Not a member yet? <a className="sign-up" href="#">SignUp Now</a>
+          </span>
 
-        <span className="alternative-login">
-          Or Login with <i className="icon-ctrl icon-rotate"></i>
-        </span>
+          <span className="alternative-login">
+            Or <span className="bold">Login with</span> <i className="icon-ctrl icon-rotate" />
+          </span>
+        </div>
 
         <div className="auth">
           <div className="buttons facebook">
-            <i className="icon-facebook"></i> <span>Login with Facebook</span>
+            <i className="icon-facebook" /> <span>Login with Facebook</span>
           </div>
           <div className="buttons google">
-            <i className="icon-google-plus"></i> <span>Login with Google</span>
+            <i className="icon-google-plus" /> <span>Login with Google</span>
           </div>
         </div>
 
