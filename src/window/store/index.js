@@ -8,7 +8,8 @@ import * as ActionTypes from '../actions/types'
 const ipcSenderMiddleware = createIpcSenderMiddleware(
   ActionTypes.ADD_CATEGORY,
   ActionTypes.REMOVE_CATEGORY,
-  ActionTypes.TICKER_WIDTH
+  ActionTypes.TICKER_WIDTH,
+  ActionTypes.ADD_COMPANY
 )
 
 const createStoreWithMiddleware = applyMiddleware(

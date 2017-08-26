@@ -1,8 +1,10 @@
 import { ipcRenderer } from 'electron'
 
-const middleware = (store) => {
+const middleware = store => {
   // main process actions
-  ipcRenderer.on('main-actions', (event, mainAction) => store.dispatch(mainAction));
+  ipcRenderer.on('main-actions', (event, mainAction) =>
+    store.dispatch(mainAction)
+  )
 
   return next => action => next(action)
 }

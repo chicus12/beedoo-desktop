@@ -1,6 +1,9 @@
 // settings
 export const TICKER_WIDTH = 'TICKER_WIDTH'
 
+// companies
+export const ADD_COMPANY = 'ADD_COMPANY'
+
 // categories
 export const ADD_CATEGORY = 'ADD_CATEGORY'
 export const REMOVE_CATEGORY = 'REMOVE_CATEGORY'
