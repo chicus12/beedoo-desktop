@@ -50,7 +50,7 @@ class Categories extends React.Component {
         <div className="box white">
           <span className="not-member">
             Not a member yet?{' '}
-            <a className="sign-up" href="#">
+            <a className="sign-up" onClick={() => hashHistory.push('/signup')}>
               SignUp Now
             </a>
           </span>

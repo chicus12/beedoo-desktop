@@ -6,7 +6,6 @@ const initialState = {
 }
 
 export default function settingsReducer(state = initialState, action = {}) {
-  console.log('heree11')
   switch (action.type) {
     case Types.TICKER_WIDTH:
       return {

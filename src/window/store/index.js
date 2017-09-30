@@ -9,7 +9,8 @@ const ipcSenderMiddleware = createIpcSenderMiddleware(
   ActionTypes.ADD_CATEGORY,
   ActionTypes.REMOVE_CATEGORY,
   ActionTypes.TICKER_WIDTH,
-  ActionTypes.ADD_COMPANY
+  ActionTypes.ADD_COMPANY,
+  ActionTypes.SIGN_UP
 )
 
 const createStoreWithMiddleware = applyMiddleware(

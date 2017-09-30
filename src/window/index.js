@@ -7,7 +7,4 @@ import App from './containers/app'
 
 require('./styles/main.sass')
 
-render(
-  <App />,
-  document.getElementById('root'),
-)
+render(<App />, document.getElementById('root'))

@@ -1,7 +1,7 @@
 import { createStructuredSelector } from 'reselect'
 
-const newCompanySelector = state => state.settings.name
+const newUserSelector = state => state.settings
 
 export default createStructuredSelector({
-  newCompany: newCompanySelector,
+  newUser: newUserSelector,
 })
