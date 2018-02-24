@@ -1,5 +1,4 @@
 import React from 'react'
-import { createBrowserHistory } from 'history'
 import { Router, Route, IndexRoute, hashHistory } from 'react-router'
 import { syncHistoryWithStore } from 'react-router-redux'
 

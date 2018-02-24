@@ -1,8 +1,7 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import { hashHistory } from 'react-router'
-import { Button, Form, FormControl, FormGroup } from 'react-bootstrap'
 
 import * as CategoryActions from '../actions/categories'
 import selector from '../selectors/categoryScreen'
@@ -10,7 +9,14 @@ import logo from '../assets/beedoo.png'
 
 require('../styles/main.sass')
 
-class Categories extends React.Component {
+class Categories extends Component {
+  constructor() {
+    super()
+
+    this.state = {
+      email: null,
+    }
+  }
   render() {
     return (
       <section className="sign">
@@ -22,7 +28,7 @@ class Categories extends React.Component {
         </div>
         <Form className="login-form">
           <div className="input-container">
-            <input type="text" id="email" required />
+            <input type="text" id="email" required value={this.state.email} />
             <label htmlFor="email">
               <i className="icon-envelop" /> Email
             </label>

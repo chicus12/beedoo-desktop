@@ -14,9 +14,11 @@ export const addCompany = company => {
     json: true,
   }
 
-  request(options).then(parsedBody => parsedBody).catch(err => {
-    console.error('An error ocurred', err)
-  })
+  request(options)
+    .then(parsedBody => parsedBody)
+    .catch(err => {
+      console.error('An error ocurred', err)
+    })
 }
 
 export const addUser = user => {
@@ -27,7 +29,9 @@ export const addUser = user => {
     json: true,
   }
 
-  return request(options).then(parsedBody => parsedBody).catch(err => {
-    console.error('An error ocurred', err)
-  })
+  return request(options)
+    .then(parsedBody => parsedBody)
+    .catch(err => {
+      console.error('An error ocurred', err)
+    })
 }
